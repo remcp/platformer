@@ -59,6 +59,7 @@ namespace Platformer
         }
         public void Buildstage1(string[,] stage1, string old_block, int lastdirection, int[] playerposition)
         {
+            // de stage wordt iedere keer opnieuw opgebouwd. voor iedere "row" wordt iedere "colm" naast elkaar neergezet.
             int colms = stage1.GetLength(1);
             int rows = stage1.GetLength(0);
             for (int y = 0; y < rows; y++)
@@ -70,6 +71,8 @@ namespace Platformer
                     Console.Write(buildstage1);
                 }
             }
+            // om te controleren of de knop wordt ingedrukt moet de stage worden aangepast. Deze code veranderderen de blokken naast de handen van het character terug in het blok dat het moet zijn.
+            // dit gebeurd ook wanneer de blokken niet zijn veranderd.
             if (lastdirection == 1)
             {
                 stage1[playerposition[0] + 1, playerposition[1] + 2] = old_block;

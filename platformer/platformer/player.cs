@@ -54,7 +54,7 @@ namespace Platformer
             int rows = stage1.GetLength(0);
             string old_block = " ";
 
-            //get old stage block
+            //bewaar blok naast character hand
             if (lastdirection == 1)
             {
                 old_block = stage1[playerposition[0] + 1, playerposition[1] + 2];
@@ -151,9 +151,11 @@ namespace Platformer
                     }
                     break;
                 case ConsoleKey.F:
+                    //buttonpress code maakt hier gebuik van om het blok naast de hand van het character te veranderen in het actie teken
                         attack[0]++;
                     break;
             }
+            //staat de speler niet op blokken dan zal deze vanzelf naar beneden vallen
             if (!Onground(stage1, playerposition[0], playerposition[1]))
             {
                 playerposition[0]++;

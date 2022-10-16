@@ -15,8 +15,8 @@ namespace Platformer
             Stage stage = new Stage();
             bool stage1game = false;
             bool stage1cleared = false;
-                string[,] currentstage = stage.Stage1();
-                game.Run1(stage1game, stage1cleared, currentstage);
+            string[,] currentstage = stage.Stage1();
+            game.Run1(stage1game, stage1cleared, currentstage);
             Console.WriteLine("level 1 cleared");
             Console.ReadLine();
         }
