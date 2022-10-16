@@ -8,32 +8,43 @@ namespace Platformer
 {
     internal class Game
     {
-        public void Run1(bool mazegame, bool mazecleared, string[,] maze)
+        public void Run1(bool stage1game, bool stage1cleared, string[,] stage1)
         {
             Stage stage = new Stage();
             Player player = new Player();
             Console.CursorVisible = false;
-
+            ConsoleKeyInfo keypress = new ConsoleKeyInfo();
             int[] playerposition = { 8, 2};
             int lastdirection = 0;
             int[] attack = { 0, 0, 0 };
 
-            while (mazegame == true || mazecleared == false)
+            long time = 0;
+
+            while (stage1game == true || stage1cleared == false)
             {
-                ConsoleKeyInfo keypress = Console.ReadKey();
+                long milliseconds = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
+
+                if (Console.KeyAvailable)
+                {
+                    keypress = Console.ReadKey();
+                }
                 try
                 {
-                    lastdirection = player.Walk(maze, playerposition, keypress, lastdirection);
-                    player.Attack(attack, keypress);
-                    stage.secretblock1(maze, playerposition);
-                    stage.Buildmaze(maze);
-                    player.buildplayer(maze, playerposition, attack, lastdirection);
-                    Console.WriteLine();
+                    if (milliseconds - time >= 150)
+                    {
+                        lastdirection = player.Walk(stage1, playerposition, keypress, lastdirection);
+                        player.Attack(attack, keypress);
+                        stage.secretblock1(stage1, playerposition);
+                        stage.Buildstage1(stage1);
+                        player.buildplayer(stage1, playerposition, attack, lastdirection);
+
+                        time = milliseconds;
+                    }
                 }
                 catch
                 {
                     Console.Clear();
-                    mazegame = false;
+                    stage1game = false;
                 }
             }
         }

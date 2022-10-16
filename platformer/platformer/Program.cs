@@ -14,9 +14,13 @@ namespace Platformer
             Game game = new Game();
             Stage stage = new Stage();
             bool dead = false;
-            bool mazecleared = false;
-            string[,] currentstage = stage.Stage1();
-            game.Run1(dead, mazecleared, currentstage);
+            bool stage1cleared = false;
+            bool repeat = true;
+            while (repeat == true)
+            {
+                string[,] currentstage = stage.Stage1();
+                game.Run1(dead, stage1cleared, currentstage);
+            }
         }
     }
 }

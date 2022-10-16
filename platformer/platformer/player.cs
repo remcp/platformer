@@ -96,16 +96,21 @@ namespace Platformer
                     if (lastdirection == 0)
                     {
                         playerposition[1]--;
+                        playerposition[1]--;
                         if (!player.Canwalk(maze, playerposition[0], playerposition[1]))
                         {
                             playerposition[1]++;
+                            playerposition[1]++;
                         }
                     }
-                    else
+                    else if(lastdirection == 1)
                     {
                         playerposition[1]++;
+                        playerposition[1]++;
+
                         if (!player.Canwalk(maze, playerposition[0], playerposition[1]))
                         {
+                            playerposition[1]--;
                             playerposition[1]--;
                         }
                     }
