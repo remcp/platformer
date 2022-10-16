@@ -13,14 +13,14 @@ namespace Platformer
         {
             Game game = new Game();
             Stage stage = new Stage();
-            bool dead = false;
+            bool stage1game = false;
             bool stage1cleared = false;
-            bool repeat = true;
-            while (repeat == true)
-            {
                 string[,] currentstage = stage.Stage1();
-                game.Run1(dead, stage1cleared, currentstage);
-            }
+                game.Run1(stage1game, stage1cleared, currentstage);
+            Console.WriteLine("level 1 cleared");
+            Console.ReadLine();
         }
     }
 }
+
+//gebruikte bron https://www.youtube.com/watch?v=T0MpWTbwseg&t=1423s
