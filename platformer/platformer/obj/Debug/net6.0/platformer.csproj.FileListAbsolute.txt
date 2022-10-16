@@ -1,0 +1,15 @@
+C:\Users\remco\source\repos\platformer\platformer\obj\Debug\net6.0\platformer.csproj.AssemblyReference.cache
+C:\Users\remco\source\repos\platformer\platformer\obj\Debug\net6.0\platformer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\remco\source\repos\platformer\platformer\obj\Debug\net6.0\platformer.AssemblyInfoInputs.cache
+C:\Users\remco\source\repos\platformer\platformer\obj\Debug\net6.0\platformer.AssemblyInfo.cs
+C:\Users\remco\source\repos\platformer\platformer\obj\Debug\net6.0\platformer.csproj.CoreCompileInputs.cache
+C:\Users\remco\source\repos\platformer\platformer\bin\Debug\net6.0\platformer.exe
+C:\Users\remco\source\repos\platformer\platformer\bin\Debug\net6.0\platformer.deps.json
+C:\Users\remco\source\repos\platformer\platformer\bin\Debug\net6.0\platformer.runtimeconfig.json
+C:\Users\remco\source\repos\platformer\platformer\bin\Debug\net6.0\platformer.dll
+C:\Users\remco\source\repos\platformer\platformer\bin\Debug\net6.0\platformer.pdb
+C:\Users\remco\source\repos\platformer\platformer\obj\Debug\net6.0\platformer.dll
+C:\Users\remco\source\repos\platformer\platformer\obj\Debug\net6.0\refint\platformer.dll
+C:\Users\remco\source\repos\platformer\platformer\obj\Debug\net6.0\platformer.pdb
+C:\Users\remco\source\repos\platformer\platformer\obj\Debug\net6.0\platformer.genruntimeconfig.cache
+C:\Users\remco\source\repos\platformer\platformer\obj\Debug\net6.0\ref\platformer.dll
